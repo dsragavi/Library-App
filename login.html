@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Login | Smart Library</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>📚 Smart Library</h1>
+    <p>Your digital library</p>
+  </header>
+
+  <main class="auth-card">
+    <h2>Login</h2>
+    <form id="loginForm">
+      <label for="email">Email address</label>
+      <input id="email" type="email" required placeholder="Enter your email">
+
+      <label for="password">Password</label>
+      <input id="password" type="password" required placeholder="Enter any demo password">
+
+      <button type="submit">Login</button>
+      <p id="message" class="message" role="status"></p>
+    </form>
+    <p>New user? <a href="register.html">Create an account</a></p>
+    <p><a href="index.html">Continue to home page</a></p>
+  </main>
+
+  <script src="auth.js"></script>
+</body>
+</html>
