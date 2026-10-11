@@ -43,3 +43,5 @@ After deployment, the website can be improved by correcting bugs, refining the i
 Conclusion
 
 The SDLC process provides a structured approach to planning, designing, developing, testing, deploying, and maintaining the Smart Library Management App.
+
+<img width="352" height="1479" alt="library" src="https://github.com/user-attachments/assets/1963c084-0adc-4c4e-8161-cfb87a0956fc" />
