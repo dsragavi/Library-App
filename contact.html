@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact | Smart Library</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Contact Us</h1>
+    <p>We welcome your feedback</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="my-books.html">My Books</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="login.html">Login</a>
+  </nav>
+
+  <main>
+    <section class="panel">
+      <h2>Send Feedback</h2>
+
+      <form id="contactForm">
+        <label for="name">Your name</label>
+        <input id="name" required placeholder="Enter your name">
+
+        <label for="email">Email</label>
+        <input id="email" type="email" required placeholder="Enter your email">
+
+        <label for="subject">Subject</label>
+        <input id="subject" required placeholder="Enter a subject">
+
+        <label for="feedback">Message</label>
+        <textarea id="feedback" rows="5" required
+                  placeholder="Write your message"></textarea>
+
+        <button type="submit">Send Feedback</button>
+      </form>
+
+      <p id="message" class="message" role="status"></p>
+    </section>
+  </main>
+
+  <footer>Smart Library Management System</footer>
+
+  <script>
+    document.getElementById("contactForm").addEventListener("submit", function(event) {
+      event.preventDefault();
+      document.getElementById("message").textContent =
+        "Thank you! Your demo feedback has been recorded on this page only.";
+      this.reset();
+    });
+  </script>
+</body>
+</html>
