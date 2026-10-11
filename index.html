@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home | Smart Library</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>📚 Smart Library</h1>
+    <p id="welcome">Discover your next favourite book</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="my-books.html">My Books</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="login.html">Login</a>
+  </nav>
+
+  <main>
+    <section class="panel">
+      <h2>Find a Book</h2>
+      <input id="search" type="search"
+             placeholder="Search by book title or author..."
+             aria-label="Search books">
+      <p id="message" class="message" role="status"></p>
+    </section>
+
+    <h2>Book Catalogue</h2>
+    <section id="bookList" class="book-grid"></section>
+  </main>
+
+  <footer>Smart Library Management System · Student Project</footer>
+  <script src="app.js"></script>
+</body>
+</html>
