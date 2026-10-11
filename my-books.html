@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Books | Smart Library</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="my-books">
+  <header>
+    <h1>📚 My Books</h1>
+    <p>Manage your borrowed books</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="my-books.html">My Books</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="login.html">Login</a>
+  </nav>
+
+  <main>
+    <section class="panel">
+      <h2>Borrowed Books</h2>
+      <input id="search" type="search"
+             placeholder="Search borrowed books..."
+             aria-label="Search borrowed books">
+      <p id="message" class="message" role="status"></p>
+    </section>
+    <section id="bookList" class="book-grid"></section>
+    <p><a href="index.html">Browse all books</a></p>
+  </main>
+
+  <footer>Smart Library Management System</footer>
+  <script src="app.js"></script>
+</body>
+</html>
