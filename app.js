@@ -35,11 +35,14 @@ function renderBooks() {
 
   const query = search ? search.value.trim().toLowerCase() : "";
 
-  const filtered = books.filter(book =>
-    book.title.toLowerCase().includes(query) ||
-    book.author.toLowerCase().includes(query)
-  );
+const pageBooks = document.body.dataset.page === "my-books"
+  ? books.filter(book => !book.available)
+  : books;
 
+const filtered = pageBooks.filter(book =>
+  book.title.toLowerCase().includes(query) ||
+  book.author.toLowerCase().includes(query)
+);
   list.replaceChildren();
 
   if (filtered.length === 0) {
